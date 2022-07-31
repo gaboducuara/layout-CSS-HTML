@@ -1,0 +1,134 @@
+:root {
+	/* ------GENERAL STYLES ------*/
+	--text-color-up: hsl(163, 72%, 41%);
+	--text-color-down: hsl(356, 69%, 56%);
+	--border-top-facebook: hsl(208, 92%, 53%);
+	--border-top-instagram-1: hsl(37, 97%, 70%);
+	--border-top-instagram-2: hsl(328, 66%, 6%);
+	--border-top-twitter: hsl(203, 89%, 53%);
+	--border-top-youtube: hsl(348, 97%, 39%);
+	--toggle-background-1: hsl(210, 78%, 56%);
+	--toggle-background-2: hsl(146, 68%, 55%);
+
+	/* ------DARK MODE ------*/
+	--background-body-dark: hsl(230, 17%, 14%);
+	--background-body-top-dark: hsl(232, 19%, 15%);
+	--background-body-card-dark: hsl(228, 28%, 20%);
+	--text-color-general-dark: hsl(228, 34%, 66%);
+	--text-color-white-dark: hsl(0, 0%, 100%);
+
+	/* ------LIGHT MODE ------*/
+	--toggle-button: hsl(230, 22%, 74%);
+	--background-body-light: hsl(0, 0%, 100%);
+	--background-body-top-light: hsl(0, 0%, 100%);
+	--background-card-light: hsl(227, 47%, 96%);
+	--text-color-general-light: hsl(230, 17%, 14%);
+	--text-color-white-light: hsl(228, 12%, 44%);
+}
+
+/* ------ RESET ------*/
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+	margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+section,
+article,
+div,
+header,
+main,
+img,
+footer {
+	box-sizing: border-box;
+}
+
+/* ------ LAYOUT ------*/
+body {
+	padding: 40px 20px;
+}
+
+/* --HEADER --*/
+
+.title-principal {
+	font-size: 24px;
+	margin-bottom: 3px;
+	font-weight: 600;
+}
+.total-follower {
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.hr-separator {
+	opacity: 0.2;
+}
+
+.container-toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+.title-theme {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.toggle {
+	width: 50px;
+	height: 25px;
+	background-color: red;
+	border-radius: 25px;
+	padding: 3px;
+}
+
+.toggle-circle {
+	height: 100%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: yellow;
+}
+/* ------ DARK MODE ------*/
+.dark-mode {
+	background: var(--background-body-dark);
+	color: var(--text-color-white-dark);
+}
+
+.dark-mode .total-follower {
+	color: var(--text-color-general-dark);
+}
+
+.hr-separator {
+	border-color: var(--text-color-general-dark);
+}
+
+.title-theme {
+	color: var(--text-color-white-dark);
+}
+
+.toggle {
+	background-image: linear-gradient(
+		to right,
+		var(--toggle-background-1),
+		var(--toggle-background-2)
+	);
+}
+
+.toggle-circle {
+	background-color: var(--background-body-dark);
+}
